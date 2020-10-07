@@ -1,0 +1,18 @@
+COPYRIGHT
+       Copyright  ©  2020  Free Software Foundation,
+       Inc.  License GPLv3+: GNU GPL  version  3  or
+       later <https://gnu.org/licenses/gpl.html>.
+       This is free software: you are free to change
+       and redistribute it.  There is  NO  WARRANTY,
+       to the extent permitted by law.
+
+SEE ALSO
+       chmod(2)
+
+       Full documentation <https://www.gnu.org/soft‐
+       ware/coreutils/chmod>
+       or available locally via:  info  '(coreutils)
+       chmod invocation'
+
+GNU coreutils 8.32   March 2020             CHMOD(1)
+/home/clara/Documents/FS/P2
