@@ -2,18 +2,19 @@
 
 #FS -- Examen módulo 1
 #Ejercicio 1 (8 puntos)
-#Clara María Romero Lara
+#Clara M Romero Lara
+
 
 if test $# -eq 1;
 then
 	lineas=`ls -l *$1* | wc -l`
 
 	printf "El número de archivos que contienen la cadena $1 es: $lineas\n" 
-
-	caracteres=`wc -c *$1* | tail -1`
-
-	printf "El tamaño total en caracteres de estos archivos es $caracteres\n";
 	
+	caracteres=`wc -c *$1* | tail -1`
+	
+	printf "El tamaño total en caracteres de estos archivos es $caracteres\n";
+
 elif test $# -eq 2 && test -f $2;
 then
 	test -f $2 && cat $1 >> $2 || cp $1 $2 ;
@@ -30,4 +31,5 @@ else
 	printf "\t ./examen1 nombrearchivo1 nombreDirectorio -- copia el archivo nombreArchivo1 en \n\tel directorio nombreDirectorio con el \n\tsiguiente nombre: nombreArchivo1_AAA-MM-DD, donde  AAAA-MM-DD es la fecha \n\tcuando se ejecuta el guión\n\n";
 	printf "\t En cualquier otro caso, imprime este mensaje de ayuda\n"
 fi;
+
 
